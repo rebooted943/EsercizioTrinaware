@@ -11,6 +11,7 @@ import { StoreListComponent } from './store/store-list/store-list.component';
 import { StoreDetailComponent } from './store/store-detail/store-detail.component';
 import { WarehouseComponent } from './store/warehouse/warehouse.component';
 import { ProductFormComponent } from './store/product-form/product-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProductFormComponent } from './store/product-form/product-form.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
