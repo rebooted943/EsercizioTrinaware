@@ -1,0 +1,29 @@
+{
+    "utenti": [
+        {
+            "email": "user1@example.com",
+            "password": "password1",
+            "tipo": "admin"
+        },
+        {
+            "email": "user2@example.com",
+            "password": "password2",
+            "tipo": "utente"
+        },
+        {
+            "email": "user3@example.com",
+            "password": "password3",
+            "tipo": "utente"
+        },
+        {
+            "email": "user4@example.com",
+            "password": "password4",
+            "tipo": "admin"
+        },
+        {
+            "email": "user5@example.com",
+            "password": "password5",
+            "tipo": "utente"
+        }
+    ]
+}

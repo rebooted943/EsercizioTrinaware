@@ -1,0 +1,13 @@
+{
+    "sedi":{
+    "nomeSede": "come te pare",
+    "indirizzoSede": "blabla",
+    "veicoli disponibili": {
+        "modello": "cazzi miei",
+        "marca": "balab",
+        "cavalli": 33,
+        "prezzo": 300
+
+        }
+    }
+}
