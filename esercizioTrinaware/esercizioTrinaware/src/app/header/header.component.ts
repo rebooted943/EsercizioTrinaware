@@ -9,11 +9,14 @@ import { DbService } from '../services/db.service';
 })
 export class HeaderComponent implements OnInit{
 
-  sedi: {}[] ;
+  nomeSede1 = 'Sede roma';
+  nomeSede2 = 'Sede napoli';
+  nomeSede3 = 'Sede africa';
 
-  constructor(private db: DbService){
-    this.sedi = [];
-  }
+
+  // constructor(private db: DbService){
+    
+  // }
 
   ngOnInit(): void {
 
