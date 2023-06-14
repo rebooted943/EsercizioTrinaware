@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ServiceAuthService } from '../services/service-auth.service';
+import { AuthService } from '../services/auth.service';
 import { DbService } from '../services/db.service';
 import { Router } from '@angular/router';
 import { Utente } from '../models/utente.model';
@@ -34,7 +34,7 @@ export class LoginComponent {
   email: string;
   password: string;
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router, private auth: AuthService) { }
 
   login() {
     this.getUtenti().subscribe(utenti => {

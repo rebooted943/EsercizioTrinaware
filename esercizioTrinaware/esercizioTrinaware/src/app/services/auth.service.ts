@@ -4,19 +4,25 @@ import { DbService } from './db.service';
 @Injectable({
   providedIn: 'root'
 })
-export class ServiceAuthService {
+export class AuthService {
 
   emailService = '';
   passwordService = '';
-  loggato: boolean;
+  logged: boolean;
   isAdmin: boolean;
-  messaggio: String = '';
+  message: String = '';
   
   constructor(private db: DbService) { }
 
-  logga(email: string, password: string){
-    
-    
+  //da implementare
+  
+  isAuth(): boolean{
+    if(this.logged){
+      return this.logged;
+    } else{
+      console.log('non funziona')
+      return this.logged;
+    }
 
   }
 
