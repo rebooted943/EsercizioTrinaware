@@ -16,7 +16,7 @@ import { SedeComponent } from './sede/sede.component';
 import { AutomobiliComponent } from './sede/automobili/automobili.component';
 import { HomeComponent } from './home/home.component';
 import { SedeDettaglioComponent } from './sede/sede-dettaglio/sede-dettaglio.component';
-import { AuthComponent } from './auth/auth.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { AuthComponent } from './auth/auth.component';
     AutomobiliComponent,
     HomeComponent,
     SedeDettaglioComponent,
-    AuthComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,

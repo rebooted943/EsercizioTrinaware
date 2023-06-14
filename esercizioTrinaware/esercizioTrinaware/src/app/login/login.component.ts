@@ -6,11 +6,11 @@ import { Utente } from '../models/utente.model';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-auth',
-  templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.scss']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
-export class AuthComponent {
+export class LoginComponent {
 
   // @Input() email = '';
   // @Input() password = '';
