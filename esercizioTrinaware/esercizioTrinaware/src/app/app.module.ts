@@ -17,6 +17,7 @@ import { AutomobiliComponent } from './sede/automobili/automobili.component';
 import { HomeComponent } from './home/home.component';
 import { SedeDettaglioComponent } from './sede/sede-dettaglio/sede-dettaglio.component';
 import { LoginComponent } from './login/login.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LoginComponent } from './login/login.component';
     AutomobiliComponent,
     HomeComponent,
     SedeDettaglioComponent,
-    LoginComponent
+    LoginComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

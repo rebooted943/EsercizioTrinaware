@@ -1,22 +1,24 @@
-<mat-toolbar color="primary">
-    <div fxLayout="row" fxLayoutAlign="start center" class="navbar-header">
-      <a href="#" class="navbar-brand">Autosalone Trinaware</a>
-    </div>
+<nav>
+  <mat-toolbar color="primary">
+      <div fxLayout="row" fxLayoutAlign="start center" class="navbar-header">
+        <a href="#" class="navbar-brand">Autosalone Trinaware</a>
+      </div>
   
-    <div class="nav-links">
-      <a mat-button routerLink="/recipes" routerLinkActive="active">Login</a>
-      <a mat-button routerLink="/shopping-list" routerLinkActive="active">Sign Up</a>
-    </div>
+      <div class="nav-links">
+        <a mat-button [routerLink]="['/login']" >Login</a>
+        <a mat-button [routerLink]="['']" >Sign Up</a>
+      </div>
   
-    <div fxFlexAlign="center end" class="dropdown">
-      <button mat-menu-item [matMenuTriggerFor]="menu">Altre sedi</button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>Sede 1</button>
-        <button mat-menu-item>Sede 2</button>
-        <button mat-menu-item>Sede 3</button>
-      </mat-menu>
-    </div>
-</mat-toolbar>
+      <div fxFlexAlign="center end" class="dropdown">
+        <button mat-menu-item [matMenuTriggerFor]="menu">Altre sedi</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item [routerLink]="['/sedi/id/:nomeSede']">Sede 1</button>
+          <button mat-menu-item>Sede 2</button>
+          <button mat-menu-item>Sede 3</button>
+        </mat-menu>
+      </div>
+  </mat-toolbar>
+</nav>
 
 
   

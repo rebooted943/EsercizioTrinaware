@@ -12,23 +12,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LoginComponent {
 
-  // @Input() email = '';
-  // @Input() password = '';
-
-
-  // constructor(private auth: ServiceAuthService, private db: DbService){
-
-  // }
-
-  // stampaUtenti(){
-  //   this.db.stampaUtenti();
-  // }
-
-  // logga(){
-  //   console.log('logga component')
-  //   this.auth.logga(this.email, this.password);
-  // }
-
   utenti: Utente[];
   apiUrl = 'http://localhost:3000/utenti';
   email: string;
@@ -55,6 +38,6 @@ export class LoginComponent {
     return this.http.get<Utente[]>(this.apiUrl);
   }
 
-  
+
 
 }
