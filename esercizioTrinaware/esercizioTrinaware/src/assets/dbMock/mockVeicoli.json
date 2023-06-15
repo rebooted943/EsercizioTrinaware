@@ -1,0 +1,101 @@
+{
+    "veicoli": [
+      {
+        "id": 1,
+        "modello": "Golf",
+        "marca": "Volkswagen",
+        "cavalli": 100,
+        "prezzo": 10000,
+        "sedeId": 1
+      },
+      {
+        "id": 2,
+        "modello": "Civic",
+        "marca": "Honda",
+        "cavalli": 120,
+        "prezzo": 15000,
+        "sedeId": 1
+      },
+      {
+        "id": 3,
+        "modello": "Focus",
+        "marca": "Ford",
+        "cavalli": 80,
+        "prezzo": 8000,
+        "sedeId": 1
+      },
+      {
+        "id": 4,
+        "modello": "A3",
+        "marca": "Audi",
+        "cavalli": 150,
+        "prezzo": 20000,
+        "sedeId": 1
+      },
+      {
+        "id": 5,
+        "modello": "Clio",
+        "marca": "Renault",
+        "cavalli": 90,
+        "prezzo": 9000,
+        "sedeId": 2
+      },
+      {
+        "id": 6,
+        "modello": "Polo",
+        "marca": "Volkswagen",
+        "cavalli": 110,
+        "prezzo": 12000,
+        "sedeId": 2
+      },
+      {
+        "id": 7,
+        "modello": "Giulia",
+        "marca": "Alfa Romeo",
+        "cavalli": 70,
+        "prezzo": 7000,
+        "sedeId": 2
+      },
+      {
+        "id": 8,
+        "modello": "3 Series",
+        "marca": "BMW",
+        "cavalli": 130,
+        "prezzo": 18000,
+        "sedeId": 2
+      },
+      {
+        "id": 9,
+        "modello": "Fiesta",
+        "marca": "Ford",
+        "cavalli": 95,
+        "prezzo": 9500,
+        "sedeId": 3
+      },
+      {
+        "id": 10,
+        "modello": "Corsa",
+        "marca": "Opel",
+        "cavalli": 105,
+        "prezzo": 11000,
+        "sedeId": 3
+      },
+      {
+        "id": 11,
+        "modello": "Yaris",
+        "marca": "Toyota",
+        "cavalli": 75,
+        "prezzo": 7500,
+        "sedeId": 3
+      },
+      {
+        "id": 12,
+        "modello": "A-Class",
+        "marca": "Mercedes-Benz",
+        "cavalli": 140,
+        "prezzo": 22000,
+        "sedeId": 3
+      }
+    ]
+  }
+  

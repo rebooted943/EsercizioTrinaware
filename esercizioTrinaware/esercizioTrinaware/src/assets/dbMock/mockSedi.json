@@ -1,13 +1,20 @@
 {
-    "sedi":{
-    "nomeSede": "come te pare",
-    "indirizzoSede": "blabla",
-    "veicoli disponibili": {
-        "modello": "cazzi miei",
-        "marca": "balab",
-        "cavalli": 33,
-        "prezzo": 300
-
-        }
-    }
-}
+    "sedi": [
+      {
+        "id": 1,
+        "nomeSede": "Sede A",
+        "indirizzoSede": "Via delle Rose, 123"
+      },
+      {
+        "id": 2,
+        "nomeSede": "Sede B",
+        "indirizzoSede": "Via dei Fiori, 456"
+      },
+      {
+        "id": 3,
+        "nomeSede": "Sede C",
+        "indirizzoSede": "Via degli Alberi, 789"
+      }
+    ]
+  }
+  

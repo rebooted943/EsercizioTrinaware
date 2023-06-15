@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
-import { DbService } from '../../services/db.service';
+import { DbService } from '../../services/utenti.service';
 import { Router } from '@angular/router';
 import { Utente } from '../../models/utente.model';
 import { HttpClient } from '@angular/common/http';
