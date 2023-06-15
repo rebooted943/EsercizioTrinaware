@@ -10,9 +10,10 @@ import { SediService } from 'src/app/services/sedi.service';
 })
 export class SediComponent implements OnInit{
 
-  sedi: Sede[] = this.sediS.sedi;
+  sedi: Sede[] = [];
 
-  constructor(private http: HttpClient, private sediS: SediService){        
+  constructor(private http: HttpClient, private sediS: SediService){    
+    this.sedi = this.sediS.sedi;    
   }
 
   ngOnInit(): void {    

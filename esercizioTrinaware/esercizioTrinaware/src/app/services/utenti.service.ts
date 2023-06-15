@@ -9,7 +9,7 @@ import { Utente } from '../models/utente.model';
 })
 export class UtentiService {
 
-  private utenti: Utente[];
+  private utenti: Utente[] = [];
 
   private apiUrl = 'http://localhost:3000/utenti';
 
@@ -17,9 +17,10 @@ export class UtentiService {
 
   stampaUtenti(){
     this.getUtenti().subscribe(responseDati =>{
-      console.log(responseDati);
+      responseDati.forEach(element => {       
+        this.utenti.push(element)        
+      })
     })
-
   }
 
   getUtenti(): Observable<Utente[]> {
@@ -31,9 +32,4 @@ export class UtentiService {
         })
       );
   }
-
-  
-
-
-
 }
