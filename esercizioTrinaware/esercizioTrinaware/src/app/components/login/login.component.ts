@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
-import { DbService } from '../../services/utenti.service';
 import { Router } from '@angular/router';
 import { Utente } from '../../models/utente.model';
 import { HttpClient } from '@angular/common/http';
+import { UtentiService } from 'src/app/services/utenti.service';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +17,7 @@ export class LoginComponent {
   email: string;
   password: string;
 
-  constructor(private http: HttpClient, private router: Router, private auth: AuthService) { }
+  constructor(private http: HttpClient, private router: Router, private auth: AuthService, private utentiS: UtentiService) { }
 
   login() {
     this.getUtenti().subscribe(utenti => {
@@ -36,6 +36,10 @@ export class LoginComponent {
 
   getUtenti() {
     return this.http.get<Utente[]>(this.apiUrl);
+  }
+
+  stampaUtenti(){
+    this.utentiS.stampaUtenti();
   }
 
 

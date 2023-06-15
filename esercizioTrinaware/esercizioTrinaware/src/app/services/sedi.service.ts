@@ -16,15 +16,14 @@ export class SediService {
 
   stampaSedi(){
     this.getSedi().subscribe(responseDati =>{
-
       responseDati.forEach(element => {       
         this.sedi.push(element)
       })      
     })
   }
 
-  getSedi(): any {
-    return this.http.get < any > (
+  getSedi(): Observable<Sede[]> {
+    return this.http.get<Sede[]>(
       this.apiUrl
     ).pipe(
       map(responseDati => {

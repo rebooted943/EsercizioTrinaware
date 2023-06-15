@@ -7,9 +7,9 @@ import { Utente } from '../models/utente.model';
 @Injectable({
   providedIn: 'root'
 })
-export class DbService {
+export class UtentiService {
 
-  utenti: Utente[];
+  private utenti: Utente[];
 
   private apiUrl = 'http://localhost:3000/utenti';
 

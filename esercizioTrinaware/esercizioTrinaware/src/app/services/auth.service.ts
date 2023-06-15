@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { DbService } from './utenti.service';
+import { UtentiService } from './utenti.service';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class AuthService {
   isAdmin: boolean;
   message: String = '';
   
-  constructor(private db: DbService) { }
+  constructor(private utentiS: UtentiService) { }
 
   //da implementare
   
