@@ -6,24 +6,24 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './shared/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { SedeComponent } from './sede/sede.component';
-import { AutomobiliComponent } from './sede/automobili/automobili.component';
-import { HomeComponent } from './home/home.component';
-import { SedeDettaglioComponent } from './sede/sede-dettaglio/sede-dettaglio.component';
-import { LoginComponent } from './login/login.component';
-import { AboutComponent } from './about/about.component';
+import { SediComponent } from './sedi/sedi.component';
+import { AutomobiliComponent } from './sedi/automobili/automobili.component';
+import { HomeComponent } from './components/home/home.component';
+import { SedeDettaglioComponent } from './sedi/sede-dettaglio/sede-dettaglio.component';
+import { LoginComponent } from './components/login/login.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SedeComponent,
+    SediComponent,
     AutomobiliComponent,
     HomeComponent,
     SedeDettaglioComponent,

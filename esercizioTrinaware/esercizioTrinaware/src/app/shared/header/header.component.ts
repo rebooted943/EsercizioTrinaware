@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Sede } from '../models/sede.model';
-import { DbService } from '../services/db.service';
 
 @Component({
   selector: 'app-header',

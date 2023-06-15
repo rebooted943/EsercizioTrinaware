@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { AuthService } from '../services/auth.service';
-import { DbService } from '../services/db.service';
+import { AuthService } from '../../services/auth.service';
+import { DbService } from '../../services/db.service';
 import { Router } from '@angular/router';
-import { Utente } from '../models/utente.model';
+import { Utente } from '../../models/utente.model';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
