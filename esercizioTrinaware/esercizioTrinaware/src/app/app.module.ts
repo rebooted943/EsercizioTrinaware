@@ -19,6 +19,8 @@ import { SedeDettaglioComponent } from './components/sedi/sede-dettaglio/sede-de
 import { LoginComponent } from './components/login/login.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { PasswordDimenticataComponent } from './components/password-dimenticata/password-dimenticata.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { FooterComponent } from './shared/footer/footer.component';
     SedeDettaglioComponent,
     LoginComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    SignupComponent,
+    PasswordDimenticataComponent
   ],
   imports: [
     BrowserModule,

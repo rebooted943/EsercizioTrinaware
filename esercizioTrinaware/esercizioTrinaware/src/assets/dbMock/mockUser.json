@@ -1,8 +1,8 @@
 {
     "utenti": [
         {
-            "email": "user1@example.com",
-            "password": "password1",
+            "email": "1",
+            "password": "2",
             "tipo": "admin"
         },
         {

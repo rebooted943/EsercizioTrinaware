@@ -9,27 +9,35 @@ import { Utente } from '../models/utente.model';
 })
 export class UtentiService {
 
-  private utenti: Utente[] = [];
+  utenti: Utente[] = [];
 
-  private apiUrl = 'http://localhost:3000/utenti';
+  utentiApiUrl = 'http://localhost:3000/utenti';
 
   constructor(private http: HttpClient) { }
 
-  stampaUtenti(){
-    this.getUtenti().subscribe(responseDati =>{
-      responseDati.forEach(element => {       
-        this.utenti.push(element)        
-      })
-    })
+  getUtenti(): Observable<Utente[]> {
+    console.log('get utenti in utenti service');
+    return this.http.get<Utente[]>(this.utentiApiUrl);
+    
   }
 
-  getUtenti(): Observable<Utente[]> {
-    return this.http.get<Utente[]>(
-      this.apiUrl
-      ).pipe(
-        map(responseDati =>{
-          return responseDati
-        })
-      );
+  setUtenti(){
+    console.log('setUtenti in utenti service');
+    
+    this.getUtenti().subscribe(responseDati => {
+      this.utenti = responseDati;
+      console.log(this.utenti);
+    });
   }
+
+
+  // getUtenti(): Observable<Utente[]> {
+  //   return this.http.get<Utente[]>(
+  //     this.apiUrl
+  //     ).pipe(
+  //       map(responseDati =>{
+  //         return responseDati
+  //       })
+  //     );
+  // }
 }

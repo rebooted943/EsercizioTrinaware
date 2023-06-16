@@ -1,4 +1,4 @@
-<h2>Login</h2>
+<!-- <h2>Login</h2>
 <form (submit)="login()">
   <div>
     <label>Email:</label>
@@ -9,6 +9,15 @@
     <input type="password" [(ngModel)]="password" name="password" required>
   </div>
   <button type="submit">Accedi</button>
-</form>
+</form> -->
 
-<button (click)="stampaUtenti()">provautenti</button>
+<h2>Login</h2>
+<input type="text" [(ngModel)]="email" placeholder="Email">
+<input type="password" [(ngModel)]="password" placeholder="Password">
+<button (click)="login()">Login</button>
+
+<h2>Registrazione</h2>
+<button (click)="register()">Registrati</button>
+
+<h2>Password Dimenticata</h2>
+<button (click)="forgotPassword()">Richiedi Password Dimenticata</button>
