@@ -90,43 +90,11 @@
     },
     {
       "id": 12,
-      "modello": "A-Class",
-      "marca": "Mercedes-Benz",
-      "cavalli": 140,
-      "prezzo": 22000,
-      "sedeId": 3
-    },
-    {
-      "id": 111,
       "modello": "Civic",
       "marca": "Honda",
-      "cavalli": 123,
-      "prezzo": 123,
-      "sedeId": 1
-    },
-    {
-      "id": 112,
-      "modello": "Civic",
-      "marca": "Honda",
-      "cavalli": 123,
-      "prezzo": 123,
-      "sedeId": 1
-    },
-    {
-      "id": 113,
-      "modello": "Civic",
-      "marca": "Honda",
-      "cavalli": 123,
-      "prezzo": 123,
-      "sedeId": 1
-    },
-    {
-      "id": 114,
-      "modello": "Civic",
-      "marca": "Honda",
-      "cavalli": 1234,
-      "prezzo": 1234,
-      "sedeId": 12
+      "cavalli": 130,
+      "prezzo": 130000,
+      "sedeId": 0
     }
   ]
 }

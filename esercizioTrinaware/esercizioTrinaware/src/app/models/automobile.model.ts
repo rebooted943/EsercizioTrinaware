@@ -1,13 +1,13 @@
 export class Automobile{
 
-    id: Number;
+    id: number;
     modello: String;
     marca: String;
-    cavalli: Number;
-    prezzo: Number;
-    sedeId: Number;
+    cavalli: number;
+    prezzo: number;
+    sedeId: number;
 
-    constructor(id: Number, modello: String, marca: String, cavalli: Number, prezzo: Number, sedeId: Number){
+    constructor(id: number, modello: String, marca: String, cavalli: number, prezzo: number, sedeId: number){
         this.id = id;
         this.modello = modello;
         this.marca = marca;

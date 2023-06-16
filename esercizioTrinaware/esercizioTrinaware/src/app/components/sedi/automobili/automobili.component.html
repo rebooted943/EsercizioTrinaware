@@ -1,35 +1,50 @@
-<!-- <p>automobili works!</p>
+<ng-container *ngFor="let automobile of automobili">
+  <tr class="table-row">
+    <td class="table-cell">{{ automobile.id }}</td>
+    <td class="table-cell">{{ automobile.modello }}</td>
+    <td class="table-cell">{{ automobile.marca }}</td>
+    <td class="table-cell">{{ automobile.cavalli }}</td>
+    <td class="table-cell">{{ automobile.prezzo }}</td>
+    <td class="table-cell">
+      <ng-container *ngIf="automobileSelezionata === automobile; else mostraModifica">
+        <input class="form-control" name="modificaModello" type="text" [(ngModel)]="modello" required>
+      </ng-container>
+      <ng-template #mostraModifica>
+        <button class="btn btn-primary btn-sm" (click)="onModificaAutomobile(automobile)">Modifica</button>
+      </ng-template>
+    </td>
+    <td class="table-cell">
+      <ng-container *ngIf="automobileSelezionata === automobile; else mostraElimina">
+        <input class="form-control" name="modificaMarca" type="text" [(ngModel)]="marca" required>
+        <input class="form-control" name="modificaCavalli" type="number" [(ngModel)]="cavalli" required>
+        <input class="form-control" name="modificaPrezzo" type="number" [(ngModel)]="prezzo" required>
+        <button class="btn btn-success btn-sm" (click)="salvaModifiche()">Salva modifiche</button>
+      </ng-container>
+      <ng-template #mostraElimina>
+        <button class="btn btn-danger btn-sm" (click)="onEliminaAutomobile(automobile.id)">Elimina</button>
+      </ng-template>
+    </td>
+  </tr>
+  <br>
+</ng-container>
 
-<p *ngFor="let automobile of automobili" > {{automobile.marca}} - {{automobile.modello}} - {{automobile.cavalli}} - {{automobile.prezzo}} - {{automobile.sedeId}}</p> -->
-
-<h2>Aggiungi Automobile</h2>
-
-<form (ngSubmit)="onAggiungiAutomobile()">
-  <div>
-    <label for="modello">Modello:</label>
-    <input name='modello' type="text" id="modello" [(ngModel)]="modello" required>
+<form>
+  <h2>Aggiungi Automobile</h2>
+  <div class="form-group">
+    <label for="nuovoModello">Modello</label>
+    <input class="form-control" name="nuovoModello" type="text" [(ngModel)]="nuovoModello" required>
   </div>
-
-  <div>
-    <label for="marca">Marca:</label>
-    <input name="marca" type="text" id="marca" [(ngModel)]="marca" required>
+  <div class="form-group">
+    <label for="nuovaMarca">Marca</label>
+    <input class="form-control" name="nuovaMarca" type="text" [(ngModel)]="nuovaMarca" required>
   </div>
-
-  <div>
-    <label for="cavalli">Cavalli:</label>
-    <input name="cavalli" type="number" id="cavalli" [(ngModel)]="cavalli" required>
+  <div class="form-group">
+    <label for="nuoviCavalli">Cavalli</label>
+    <input class="form-control" name="nuoviCavalli" type="number" [(ngModel)]="nuoviCavalli" required>
   </div>
-
-  <div>
-    <label for="prezzo">Prezzo:</label>
-    <input name="prezzo" type="number" id="prezzo" [(ngModel)]="prezzo" required>
+  <div class="form-group">
+    <label for="nuovoPrezzo">Prezzo</label>
+    <input class="form-control" name="nuovoPrezzo" type="number" [(ngModel)]="nuovoPrezzo" required>
   </div>
-
-  <div>
-    <label for="sedeId">ID Sede:</label>
-    <input name="sedeId" type="number" id="sedeId" [(ngModel)]="sedeId" required>
-  </div>
-
-  <button type="submit">Aggiungi</button>
+  <button class="btn btn-primary" (click)="onAggiungiAutomobile()">Aggiungi</button>
 </form>
-

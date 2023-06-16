@@ -1,6 +1,39 @@
-<p *ngFor="let sede of sedi" > {{sede.id}} - {{sede.nomeSede}} - {{sede.indirizzoSede}}</p>
+<ng-container *ngFor="let sede of sedi">
+    <tr class="table-row">
+      <td class="table-cell">{{ sede.id }}</td>
+      <td class="table-cell">{{ sede.nomeSede }}</td>
+      <td class="table-cell">{{ sede.indirizzoSede }}</td>
+      <td class="table-cell">
+        <ng-container *ngIf="sedeSelezionata === sede; else mostraModifica">
+          <input class="form-control" name="modificaNomeSede" type="text" [(ngModel)]="nomeSede" required>
+        </ng-container>
+        <ng-template #mostraModifica>
+          <button class="btn btn-primary btn-sm" (click)="onModificaSede(sede)">Modifica</button>
+        </ng-template>
+      </td>
+      <td class="table-cell">
+        <ng-container *ngIf="sedeSelezionata === sede; else mostraElimina">
+          <input class="form-control" name="modificaIndirizzoSede" type="text" [(ngModel)]="indirizzoSede" required>
+          <button class="btn btn-success btn-sm" (click)="salvaModifiche()">Salva modifiche</button>
+        </ng-container>
+        <ng-template #mostraElimina>
+          <button class="btn btn-danger btn-sm" (click)="onEliminaSede(sede.id)">Elimina</button>
+        </ng-template>
+      </td>
+    </tr>
+    <br>
+  </ng-container>
 
-
-
-<!-- <button (click)="stampaSedi()">Stampa sedi</button> -->
-<app-sede-dettaglio></app-sede-dettaglio>
+  <form>
+    <h2>Aggiungi Sede</h2>
+    <div class="form-group">
+      <label for="nomeNuovaSede">Nome Sede</label>
+      <input class="form-control" name="nomeNuovaSede" type="text" [(ngModel)]="nomeNuovaSede" required>
+    </div>
+    <div class="form-group">
+      <label for="indirizzoNuovaSede">Indirizzo Sede</label>
+      <input class="form-control" name="indirizzoNuovaSede" type="text" [(ngModel)]="indirizzoNuovaSede" required>
+    </div>
+    <button class="btn btn-primary" (click)="onAggiungiSede()">Aggiungi</button>
+  </form>
+  
