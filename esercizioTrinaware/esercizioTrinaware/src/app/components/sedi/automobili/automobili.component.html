@@ -1,3 +1,35 @@
-<p>automobili works!</p>
+<!-- <p>automobili works!</p>
 
-<p *ngFor="let automobile of automobili" > {{automobile.marca}} - {{automobile.modello}} - {{automobile.cavalli}} - {{automobile.prezzo}} - {{automobile.sedeId}}</p>
+<p *ngFor="let automobile of automobili" > {{automobile.marca}} - {{automobile.modello}} - {{automobile.cavalli}} - {{automobile.prezzo}} - {{automobile.sedeId}}</p> -->
+
+<h2>Aggiungi Automobile</h2>
+
+<form (ngSubmit)="onAggiungiAutomobile()">
+  <div>
+    <label for="modello">Modello:</label>
+    <input name='modello' type="text" id="modello" [(ngModel)]="modello" required>
+  </div>
+
+  <div>
+    <label for="marca">Marca:</label>
+    <input name="marca" type="text" id="marca" [(ngModel)]="marca" required>
+  </div>
+
+  <div>
+    <label for="cavalli">Cavalli:</label>
+    <input name="cavalli" type="number" id="cavalli" [(ngModel)]="cavalli" required>
+  </div>
+
+  <div>
+    <label for="prezzo">Prezzo:</label>
+    <input name="prezzo" type="number" id="prezzo" [(ngModel)]="prezzo" required>
+  </div>
+
+  <div>
+    <label for="sedeId">ID Sede:</label>
+    <input name="sedeId" type="number" id="sedeId" [(ngModel)]="sedeId" required>
+  </div>
+
+  <button type="submit">Aggiungi</button>
+</form>
+
